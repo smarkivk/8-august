@@ -1,0 +1,15 @@
+class EnumExample1 {
+    // defining the enum inside the class
+    public enum Season { WINTER, SPRING, SUMMER, FALL }
+
+    // main method
+    public static void main(String[] args) {
+        // traversing the enum using normal for loop
+        Season[] seasons = Season.values();
+        for (int i = 0; i < seasons.length; i++) {
+            System.out.println(seasons[i]);
+        }
+    }
+}
+
+The provided code defines an enum named Season inside the class EnumExample1 and then uses a normal for loop to traverse and print the enum values. Here's the complete Java program:
