@@ -1,0 +1,41 @@
+// Define an enum named "Day" to represent days of the week
+enum Day {
+    SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY
+}
+
+public class EnumUsageExample {
+    public static void main(String[] args) {
+        // Declare a variable of the enum type
+        Day today = Day.WEDNESDAY;
+
+        // Using switch statement with enum
+        switch (today) {
+            case MONDAY:
+                System.out.println("It's Monday!");
+                break;
+            case WEDNESDAY:
+                System.out.println("It's Wednesday!");
+                break;
+            case FRIDAY:
+                System.out.println("It's Friday!");
+                break;
+            default:
+                System.out.println("It's some other day.");
+        }
+
+        // Iterating through enum values
+        //System.out.println("Days of the week:");
+        //for (Day day : Day.values()) {
+          //  System.out.println(day);
+
+                // Iterating through enum values using a normal for loop
+        Day[] daysOfWeek = Day.values();
+        System.out.println("Days of the week:");
+        for (int i = 0; i < daysOfWeek.length; i++) {
+            System.out.println(daysOfWeek[i]);
+        }
+    }
+}
+
+
+
